@@ -294,7 +294,8 @@ const handlePlantsClick = (e) => {
                 <div className="product-title">{plant.name}</div>
                 <div className="product-cost">{plant.cost}</div>
                 <div className="product-description">{plant.description}</div>
-                <button  className="product-button" onClick={() => handleAddToCart(plant)}>Add to Cart
+                <button  className="product-button" onClick={() => handleAddToCart(plant)}>
+                {addedToCart [plant.name] ? 'Added to cart' : 'Add to cart'}
             </button>
             </div>
             ))}
